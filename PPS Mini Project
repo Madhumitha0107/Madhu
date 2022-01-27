@@ -30,7 +30,6 @@ scanf("%d",&j);
 
 switch (j)
 {
-/* Add book */
 case 1:  
 
 printf ("Enter book name = ");
