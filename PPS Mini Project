@@ -10,8 +10,8 @@ struct library{
 int main(){
    struct library lib[100];
    char bookname[30];
-   int i,j, keepcount;
-   i=j=keepcount = 0;
+   int m,j, keepcount;
+   m=j=keepcount = 0;
    while(j!=6){
       printf("\n1. Add book information\n");
       printf("2.Display book information\n");
@@ -20,26 +20,26 @@ int main(){
       printf ("\n\nEnter one of the above : ");
       scanf("%d",&j);
       switch (j){
-         /* Add book */
+         
          case 1:
             printf ("Enter book name = ");
-            scanf ("%s",lib[i].bookname);
+            scanf ("%s",lib[m].bookname);
             printf ("Enter author name = ");
-            scanf ("%s",lib[i].author);
+            scanf ("%s",lib[m].author);
             printf ("Enter pages = ");
-            scanf ("%d",&lib[i].noofpages);
+            scanf ("%d",&lib[m].noofpages);
             printf ("Enter price = ");
-            scanf ("%f",&lib[i].price);
+            scanf ("%f",&lib[m].price);
             keepcount++;
-            i++;
+            m++;
             break;
          case 2:
             printf("you have entered the following information\n");
-            for(i=0; i<keepcount; i++){
-               printf ("book name = %s\n",lib[i].bookname);
-               printf ("\t author name = %s\n",lib[i].author);
-               printf ("\t pages = %d\n",lib[i].noofpages);
-               printf ("\t price = %f\n",lib[i].price);
+            for(m=0; m<keepcount; m++){
+               printf ("book name = %s\n",lib[m].bookname);
+               printf ("\t author name = %s\n",lib[m].author);
+               printf ("\t pages = %d\n",lib[m].noofpages);
+               printf ("\t price = %f\n",lib[m].price);
             }
             break;
          case 3:
